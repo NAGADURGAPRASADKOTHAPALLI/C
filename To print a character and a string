@@ -1,0 +1,9 @@
+//To print a character and a string
+#include<stdio.h>
+ main()
+{
+	char ch,s[10];
+	scanf("%c %s",&ch,s);
+	printf("%c %s",ch,s);
+	return 0;
+}
