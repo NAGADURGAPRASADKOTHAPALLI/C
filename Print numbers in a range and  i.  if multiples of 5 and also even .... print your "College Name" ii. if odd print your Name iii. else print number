@@ -1,0 +1,21 @@
+// Print numbers in a range and 
+i.  if multiples of 5 and also even .... print your "College Name"
+ii. if odd print your Name
+iii. else print number
+#include<stdio.h>
+void main()
+{
+	int n,i;
+	printf("enter the range:");
+	scanf("%d %d",&i,&n);
+	while(i<=n)
+	{
+		if(i%5==0&&i%2==0)
+		printf("aditya degree college rjy\n");
+		else if(i%5==0&&i%2==1)
+		printf("kndp\n");
+		else
+		printf("%d\n",i);
+		i++;
+	}
+}
