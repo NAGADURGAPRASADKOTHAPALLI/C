@@ -1,0 +1,19 @@
+ To find out the largest number among 'n' numbers using while loop?
+#include<stdio.h>
+void main()
+{
+	int n,num,big,i;
+	printf("enter the no. of numbers:");
+	scanf("%d",&n);
+	printf("enter the numbers:");
+	big=0;
+	i=1;
+	while(i<=n)
+	{
+		scanf("%d",&num);
+		if(big<num)
+		big=num;
+	    i++;
+	}
+	printf("the big number is %d",big);
+}
