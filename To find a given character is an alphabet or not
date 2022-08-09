@@ -1,0 +1,13 @@
+//To find a given character is an alphabet or not.
+#include<stdio.h>
+void main()
+{
+	char ch;
+	scanf("%c",&ch);
+	if(65<=ch&&ch<=90)
+	printf("character is an alphabet ");
+	else if(97<=ch&&ch<=122)
+	printf("character is  an alphabet");
+	else
+	printf("character is not an alphabet");
+}
