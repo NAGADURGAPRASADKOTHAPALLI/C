@@ -1,0 +1,17 @@
+//Write a program to read a number and print true of number is power 2 else print false
+#include<stdio.h>
+void main()
+
+{
+	int n;
+	printf("enter the value:");
+	scanf("%d",&n);
+	if((n&n-1)==0)
+	{
+		printf("it is a value of power of 2");
+	}
+	else
+	{
+		printf("it is not the value of power of 2");
+	}
+}
