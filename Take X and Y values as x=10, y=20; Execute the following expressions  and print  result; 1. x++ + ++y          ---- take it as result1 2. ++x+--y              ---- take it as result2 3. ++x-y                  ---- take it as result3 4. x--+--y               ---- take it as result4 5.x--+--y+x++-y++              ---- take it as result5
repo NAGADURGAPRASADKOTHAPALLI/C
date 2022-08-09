@@ -1,0 +1,57 @@
+Take X and Y values as x=10, y=20;
+Execute the following expressions  and print  result;
+1. x++ + ++y          ---- take it as result1
+2. ++x+--y              ---- take it as result2
+3. ++x-y                  ---- take it as result3
+4. x--+--y               ---- take it as result4
+5.x--+--y+x++-y++              ---- take it as result5
+#include<stdio.h>
+INPUT-1
+void main()
+{
+	int x=10,y=20,result1;
+	result1=x++ + ++y;
+	printf("result1: %d",result1);
+	
+}
+OUTPUT-1:result1: 31
+INPUT-2
+#include<stdio.h>
+void main()
+{
+	int x=10,y=20,result2;
+	result2=++x + --y;
+	printf("result2: %d",result2);
+	
+}
+OUTPUT-2:result2: 30
+INPUT-3
+#include<stdio.h>
+void main()
+{
+	int x=10,y=20,result3;
+	result3=++x - y;
+	printf("result3: %d",result3);
+	
+}
+OUTPUT-3:result3: -9
+INPUT-4
+#include<stdio.h>
+void main()
+{
+	int x=10,y=20,result4;
+	result4=x-- + --y;
+	printf("result4: %d",result4);
+	
+}
+OUTPUT:result4: 29
+INPUT-5
+#include<stdio.h>
+void main()
+{
+	int x=10,y=20,result5;
+	result5=x-- + --y + x++ - y++;
+	printf("result5: %d",result5);
+	
+}
+OUTPUT:result5: 19
