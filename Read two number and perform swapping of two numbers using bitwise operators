@@ -1,0 +1,13 @@
+//Read two number and perform swapping of two numbers using bitwise operators
+#include<stdio.h>
+void main()
+{
+	int a,b;
+	printf("enter two values:");
+	scanf("%d %d",&a,&b);
+	a=a^b;
+	b=a^b;
+	a=a^b;
+	printf("a is %d\n",a);
+	printf("b is %d",b);
+}
