@@ -1,0 +1,26 @@
+//A C program to calculate tax based on annual income
+#include<stdio.h>
+void main()
+{
+	int income,tax;
+	char coustmer_name[20];
+	printf("enter the coustmer name and income:");
+	scanf("%s %d",coustmer_name,&income);
+	if(income<150000)
+	printf("no tax");
+	else if(150000<income&&income<300000)
+	{
+		tax=(income*10)/100;
+	}
+	else if(300000<income&&income<500000)
+	{
+		tax=(income*15)/100;
+	}
+	else 
+	{
+		tax=(income*20)/100;
+	}
+	printf("coustmer name:%s\n",coustmer_name);
+	printf("income:%d\n",income);
+	printf("*****************\n");
+	printf("tax:%d",tax);
