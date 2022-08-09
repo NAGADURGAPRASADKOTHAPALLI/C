@@ -1,0 +1,14 @@
+//To find a given number is positive,negative or 0.
+#include<stdio.h>
+void main()
+{
+	int n;
+	printf("enter a value:");
+	scanf("%d",&n);
+	if(n>0)
+	printf("given number is positive");
+	else if(n<0)
+	printf("given number is negitive");
+	else
+	printf("given number is 0");
+}
