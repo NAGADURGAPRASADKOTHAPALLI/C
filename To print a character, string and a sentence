@@ -1,0 +1,15 @@
+//To print a character,string and a sentence.
+#include<stdio.h>
+int main()
+{
+	char ch,s[10],sen[50];
+	scanf("%c",&ch);
+	scanf("%s",s);
+	scanf("\n");
+	scanf("%[^\n]s",sen);
+	printf("%c\n",ch);
+	printf("%s",s);
+	printf("\n");
+	printf("%s",sen);
+	return 0;
+}
