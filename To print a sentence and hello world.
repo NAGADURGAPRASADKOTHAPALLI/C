@@ -1,0 +1,10 @@
+//To print a sentence and hello world.
+#include<stdio.h>
+int main()
+{
+	char sen[50];
+	scanf("%[^\n]s",sen);
+	printf("Hello,World!\n");
+	printf("%s",sen);
+	return 0;
+}
