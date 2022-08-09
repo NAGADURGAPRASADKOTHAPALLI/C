@@ -1,0 +1,26 @@
+//Armstrong or not
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+	int n,r,m,temp,power=0,sum=0;
+	printf("enter a number:");
+	scanf("%d",&n);
+	temp=n;
+	m=n;
+	while(m>0)
+	{
+		m=m/10;
+		power++;
+	}
+	while(n>0)
+	{
+		r=n%10;
+		sum=sum+pow(r,power);
+		n=n/10;
+	}
+	if(temp==sum)
+	printf("ARMSTRONG");
+	else
+	printf("NOT ARMSTRONG");
+}
